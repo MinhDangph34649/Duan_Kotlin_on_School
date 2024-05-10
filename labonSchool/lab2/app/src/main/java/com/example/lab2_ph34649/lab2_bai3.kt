@@ -28,7 +28,7 @@ fun xetnamnhuan(a: Int) {
 
 }
 fun xetdungsai(a: Int) {
-    if (a != 0 && a.rem(4) == 0 && a.rem(400) == 0 || a.rem(100) != 0) {
+    if ((a % 4 == 0 && a % 100 != 0) || a % 400 == 0) {
         println("Năm $a chính là năm nhuận")
     } else {
         println("Năm $a không phải năm nhuận")
